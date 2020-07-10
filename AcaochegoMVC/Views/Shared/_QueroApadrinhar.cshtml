@@ -1,0 +1,137 @@
+﻿
+<div id="pagina-quero-apadrinhar">
+
+    <div class="container">
+
+        <div class="texto-espacado-10">
+            <h2 class="frase-header">Quero Apadrinhar</h2>
+        </div>
+
+        <div class="texto-espacado-10">
+            <p>
+                A melhor forma de ajudar a ONG (além de adotar um fofinho, claro) é escolher um(a) afilhado(a) ou mais para apadrinhar! A contribuição mensal mínima por cão é de R$ 30,00.
+            </p>
+
+            <p>
+                Escolha seu afilhado abaixo e nos envie um e-mail (apadrinhamento@acaochego.org) ou selecione um cãozinho e preencha o formulário.
+            </p>
+
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
+                        <label class="btn btn-filtro active mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-todos" autocomplete="off" checked> Todos
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-com-padrinhos" autocomplete="off"> Com Padrinhos
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-sem-padrinhos" autocomplete="off"> Sem Padrinhos
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            @*Como este código repete em duas páginas, criei uma partial view para reaproveitamento*@
+            @Html.Partial("_ResultadoPesquisaCaes")
+
+
+            <div id="abas-quero-apadrinhar">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#apadrinhar">Quero apadrinhar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#padrinhos">Padrinhos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#deposito">Dados para depósito</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active p-4" id="apadrinhar">
+
+                        <div id="form-apadrinhar">
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Nome</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="nome-completo" placeholder="Nome completo">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">E-mail</label>
+                                <div class="col-sm-11">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Telefone</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Valor</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="valor" placeholder="Valor">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Dia depósito</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="dia" placeholder="Dia depósito">
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-azul">Enviar</button>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane container fade p-4" id="padrinhos">
+
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="row">
+                                    <div class="col">Fulano de tal</div>
+                                    <div class="col">Cicrano de tal</div>
+                                    <div class="col">Beltrano de tal</div>
+                                    <div class="col">Beltrano de tal 2</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane container fade p-4" id="deposito">
+
+                        @Html.Partial("_DadosDeposito")
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

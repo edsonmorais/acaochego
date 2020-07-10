@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "A Acãochego - Tributo";
+}
+
+
+
+<div id="pagina-tributo">
+
+    <div class="container">
+
+        <div class="texto-espacado-10">
+            <h2 class="frase-header">Tributo</h2>
+        </div>
+
+        <div class="texto-espacado-10">
+            <p>
+                Alguns cães vivem a vida inteira conosco. Muitos não tem a sorte de viver em uma família e são acolhidos por nós como um novo filho que chega à casa. Quando passam a brilhar no céu, todos eles deixam uma marca em nós. Abaixo estão alguns cães que viveram na Acãochego.
+            </p>
+        </div>
+
+        <div>
+
+            <div class="row pr-5 pl-5">
+                @*Fazer o loop do retorno nesta div*@
+                <div class="col-xs-12 col-md-3">
+
+
+                    <div data-toggle="popover" data-content="Outra história de cão que virou estrelinha" class="card text-dark mb-3" style="max-width: 18rem;background-color:#549cb5">
+                        <div class="card-header">
+                            <img class="card-img-top" src="@Url.Content("~/Content/images/banner3-xs.jpg")" alt="[Nome do cachorro]">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title">[Nome do cachorro]</h6>
+                            <div>Nascimento: 01/01/2000</div>
+                            <div>Falecimento: 01/01/2020</div>
+                        </div>
+                    </div>
+                
+                </div>
+
+
+                @*INICIO Estas divs abaixo são só para ilustrar o retorno com mais de um registro.*@
+
+                <div class="col-xs-12 col-md-3">
+                    <div data-toggle="popover" data-content="Outra história de cão que virou estrelinha" class="card text-dark mb-3" style="max-width: 18rem;background-color:#549cb5">
+                        <div class="card-header">
+                            <img class="card-img-top" src="@Url.Content("~/Content/images/banner3-xs.jpg")" alt="[Nome do cachorro]">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title">[Nome do cachorro]</h6>
+                            <div>Nascimento: 01/01/2000</div>
+                            <div>Falecimento: 01/01/2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                    <div data-toggle="popover" data-content="Outra história de cão que virou estrelinha" class="card text-dark mb-3" style="max-width: 18rem;background-color:#549cb5">
+                        <div class="card-header">
+                            <img class="card-img-top" src="@Url.Content("~/Content/images/banner3-xs.jpg")" alt="[Nome do cachorro]">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title">[Nome do cachorro]</h6>
+                            <div>Nascimento: 01/01/2000</div>
+                            <div>Falecimento: 01/01/2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                    <div data-toggle="popover" data-content="Outra história de cão que virou estrelinha" class="card text-dark mb-3" style="max-width: 18rem;background-color:#549cb5">
+                        <div class="card-header">
+                            <img class="card-img-top" src="@Url.Content("~/Content/images/banner3-xs.jpg")" alt="[Nome do cachorro]">
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title">[Nome do cachorro]</h6>
+                            <div>Nascimento: 01/01/2000</div>
+                            <div>Falecimento: 01/01/2020</div>
+                        </div>
+                    </div>
+                </div>
+
+                @*FIM Estas divs abaixo são só para ilustrar o retorno com mais de um registro.*@
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+@section scripts {
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top',
+                trigger: 'hover'
+            });
+        });
+
+    </script>
+
+}

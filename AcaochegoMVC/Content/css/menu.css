@@ -1,0 +1,128 @@
+﻿
+
+
+.navicon {
+    width: 100%;
+    background: transparent;
+    margin: 20px auto 20px;
+    position: relative;
+    height: 30px;
+    width: 50px;
+    display: block;
+    z-index: 99;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+}
+
+    .navicon:before, .navicon:after {
+        background: #549cb5;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        content: "";
+        height: 3px;
+        left: 0;
+        -webkit-transition: 0.8s ease;
+        transition: 0.8s ease;
+        width: 40px;
+    }
+
+    .navicon:before {
+        box-shadow: #549cb5 0 14px 0 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .navicon:after {
+        position: absolute;
+        top: 28px;
+    }
+
+.navicon--active {
+    margin-top: 20px;
+    -webkit-transition: linear 0.5s all;
+    transition: linear 0.5s all;
+}
+
+    .navicon--active:before {
+        box-shadow: transparent 0 0 0 0;
+        top: 15px;
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+    }
+
+    .navicon--active:after {
+        top: 15px;
+        -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+
+
+.toggle {
+
+    background-color: #549cb5;
+    color: #ffffff;
+    /* text-align: center; */
+    opacity: 0;
+    -webkit-transition: ease-in 0.5s all;
+    transition: ease-in 0.5s all;
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    min-height: 410px;
+    width: 100%;
+}
+
+@media (min-width: 577px) {
+    .toggle-position {
+        position: absolute;
+    }
+}
+
+
+
+
+.toggle--active {
+    display: block;
+    opacity: 1;
+    -webkit-transition: ease-in 0.5s all;
+    transition: ease-in 0.5s all;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 1000;
+}
+
+
+
+
+.toggle-menu li {
+    display: block;
+    padding: 4px;
+}
+
+    .toggle-menu li a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: linear 0.5s all;
+        transition: linear 0.5s all;
+    }
+
+        .toggle-menu li a span {
+            text-transform: lowercase;
+        }
+
+        .toggle-menu li a:hover {
+            color: #20647c;
+            /* border-bottom: 2px solid #000; */
+            -webkit-transition: linear 0.5s all;
+            transition: linear 0.5s all;
+            -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            transform: scale(1.15);
+            font-weight: 700;
+        }

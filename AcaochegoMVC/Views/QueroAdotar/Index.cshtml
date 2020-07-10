@@ -1,0 +1,264 @@
+﻿@{
+    ViewBag.Title = "Quero Adotar - OSCIP Acãochego";
+}
+
+<div id="pagina-quero-adotar">
+
+    <div class="container">
+
+        <div class="texto-espacado-10">
+            <h2 class="frase-header">Cães para adoção</h2>
+        </div>
+
+        <div class="texto-espacado-10 mt-3">
+            <p>
+                São muitos os cães disponíveis para adoção em nossa chácara. Aqui colocamos as fotos de alguns para que você possa se apaixonar por suas carinhas. Caso queira ir conhecer seu fofo ou fofa, por favor nos escreva contando um pouco de você, de sua família, sua casa e de sua rotina para que possamos agendar uma visita: acaochegoorg@yahoo.com.br
+            </p>
+
+        </div>
+
+        <div class="texto-espacado-10">
+            <h2 class="frase-header">Encontre seu melhor amigo</h2>
+
+        </div>
+
+        <div id="filtros-pesquisa" class="texto-espacado-10">
+
+
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+
+                    <div class="input-group">
+                        <input class="form-control py-2 border-right-0 border" type="search" placeholder="Nome do cãozinho" />
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-transparent"><i class="fa fa-search"></i></span>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col">
+
+                    <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
+                        <label class="btn btn-filtro active mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-todos" autocomplete="off" checked> Todos
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-pequenos" autocomplete="off"> Pequenos
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-medios" autocomplete="off"> Médios
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-grandes" autocomplete="off"> Grandes
+                        </label>
+                        &nbsp;
+                        <label class="btn btn-filtro mt-1" style="border-radius:10px;">
+                            <input type="radio" name="options" id="rb-filhotes" autocomplete="off"> Filhotes
+                        </label>
+                        &nbsp;
+                        <label class="adocao-conjunta btn btn-filtro mt-1"
+                               style="border-radius:10px;"
+                               data-container="body"
+                               data-toggle="popover"
+                               data-placement="top"
+                               data-content="Cães adotáveis somente em duplas ou famílias.">
+                            <input type="radio" name="options" id="rb-conjunta" autocomplete="off"> Adoção Conjunta
+                        </label>
+                        &nbsp;
+                        <label class="caes-especiais btn btn-filtro mt-1"
+                               style="border-radius:10px;"
+                               data-container="body"
+                               data-toggle="popover"
+                               data-placement="top"
+                               data-content="Cães com alguma necessidade especial ou problema de saúde.">
+                            <input type="radio" name="options"
+                                   id="rb-especiais" autocomplete="off"> Cães Especiais
+                        </label>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            
+
+            @Html.Partial("_ResultadoPesquisaCaes")
+
+            <div id="abas-quero-adotar">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#ficha">Ficha de adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#politica">Política de adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#apadrinhar">Quero apadrinhar</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active p-4" id="ficha">
+
+                        <div id="form-adotar">
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Nome</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="nome-completo" placeholder="Nome completo">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">E-mail</label>
+                                <div class="col-sm-11">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-1 col-form-label">Telefone</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>
+                                    Conte-nos um pouco sobre você, sua casa e a rotina de sua família
+                                </label>
+                                <textarea id="sobre-voce" class="form-control" rows="6">
+                                </textarea>
+                            </div>
+                            <button type="submit" class="btn btn-azul">Enviar</button>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane container fade p-4" id="politica">
+
+
+
+                        <p>
+                            Para garantir o bem-estar dos cães adotados, temos algumas preocupações e premissas
+                            que norteiam a entrevista e o acompanhamento da adaptação do bichinho. Veja abaixo:
+                        </p>
+
+                        <p>- As adoções são feitas pessoalmente na chácara ou nas feiras de adoção. Não entregamos o cão a terceiros. A pessoa interessada em adotar deve ser a pessoa a conhecer o cão e assinar o documento de adoção.</p>
+
+                        <p>- Permitimos a adoção se sentimos que a família responsável está apta emocionalmente a ter um cão em sua casa. Se terá tempo, paciência, dedicação. Cães são como crianças. Precisam de atenção.</p>
+
+                        <p>- O cão precisa ter espaço físico, segurança, comida, água e dedicação. Caso seja um quintal aberto, é preciso garantir que o cão tenha um espaço coberto e fechado para se proteger da chuva e do sol.</p>
+
+                        <p>- O tutor deve garantir assistência veterinária em caso de doenças e incômodos do animal. Bem como se preocupar com as vacinações anuais.</p>
+
+                        <p>- Adoramos quando o novo lar do cão é um sítio ou uma chácara. O espaço ideal para correr e se aventurar. Porém desencorajamos a adoção caso o terreno não seja delimitado e permita fugas. Não queremos o cão novamente nas ruas.</p>
+
+                        <p>- Caso aconteça algum problema de adaptação, orientamos quais as medidas a serem tomadas para que a convivência seja leve e feliz para todos.</p>
+
+                        <p>- Em caso de real impossibilidade de manter a adoção, o cão é resgatado e é levado novamente para o abrigo.</p>
+
+                    </div>
+                    <div class="tab-pane container fade p-4" id="apadrinhar">
+
+                        <div id="form-apadrinhar">
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Nome</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="nome-completo" placeholder="Nome completo">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">E-mail</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Telefone</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Valor da contribuição</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="valor" placeholder="Valor da contribuição">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Dia do depósito</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="dia" placeholder="Dia do depósito">
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-azul">Enviar</button>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+
+    <script type="text/javascript">
+
+        const activeImage = document.querySelector(".product-image .active");
+        const productImages = document.querySelectorAll(".image-list img");
+
+
+        function changeImage(e) {
+            activeImage.src = e.target.src;
+        }
+
+        function toggleNavigation() {
+            this.nextElementSibling.classList.toggle('active');
+        }
+
+
+        //Esta função deve ser chamada quando houver o retorno da pesquisa feita em banco
+        //Caso contrário apresentará o erro: Cannot read property 'addEventListener' of null
+        productImages.forEach(function (image) {
+            image.addEventListener("click", changeImage)
+        });
+
+
+
+
+    </script>
+
+}

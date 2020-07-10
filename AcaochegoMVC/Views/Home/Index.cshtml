@@ -1,0 +1,160 @@
+﻿
+
+<div id="pagina-home">
+
+    <div id="banner-mobile" class="d-block d-sm-none text-center">
+
+        <div class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active entrada tempo5s">
+                    <img class="d-block w-100" src="@Url.Content("~/Content/images/banner1-xs.jpg")">
+                </div>
+                <div class="carousel-item entrada tempo5s">
+                    <img class="d-block w-100" src="@Url.Content("~/Content/images/banner2-xs.jpg")">
+                </div>
+                <div class="carousel-item entrada tempo5s">
+                    <img class="d-block w-100" src="@Url.Content("~/Content/images/banner3-xs.jpg")">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="banner-desktop" class="bg-image bg-image1 d-none d-sm-block">
+
+        <div class="row">
+
+            <div id="botoes-acao"
+                 class="area-botao-acao col-xl-3 offset-xl-9 col-lg-4 offset-lg-8 col-md-4 offset-md-8 col-sm-6 offset-sm-6 text-center">
+
+                <div class="row" style="height: 33%;">
+                    <div class="col">
+                        <div class="row h-100">
+                            <div class="col-12 my-auto">
+                                <a href="@Url.Action("Index", "QueroAdotar")">
+                                    <img src="@Url.Content("~/Content/images/btn-adotar-150.png")" alt="Quero Adotar"
+                                         class="botao-acao">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 33%;">
+                    <div class="col">
+                        <div class="row h-100">
+                            <div class="col-12 my-auto">
+                                <a href="@Url.Action("Index", "QueroAjudar")">
+                                    <img src="@Url.Content("~/Content/images/btn-ajudar-150.png")" alt="Quero Ajudar"
+                                         class="botao-acao">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 33%;">
+                    <div class="col">
+                        <div class="row h-100">
+                            <div class="col-12 my-auto">
+                                <a href="@Url.Action("Index", "QueroApadrinhar")">
+                                    <img src="@Url.Content("~/Content/images/btn-apadrinhar-150.png")" alt="Quero Apadrinhar"
+                                         class="botao-acao">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div id="botoes-acao-mobile" class="text-center d-block d-sm-none entrada tempo5s">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="@Url.Action("Index", "QueroAdotar")"><img src="@Url.Content("~/Content/images/btn-adotar-150.png")" alt="Quero Adotar" width="100"></a>
+                <a href="@Url.Action("Index", "QueroAjudar")"><img src="@Url.Content("~/Content/images/btn-ajudar-150.png")" alt="Quero Ajudar" width="100"></a>
+                <a href="@Url.Action("Index", "QueroApadrinhar")"><img src="@Url.Content("~/Content/images/btn-apadrinhar-150.png")" alt="Quero Apadrinhar" width="100"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container texto-duas-colunas">
+
+        <p>
+            A Acãochego é uma entidade não-governamental que trabalha como ponte ao facilitar que o
+            cão, antes em situação de rua ou
+            abandono, chegue em seu lar definitivo sendo acolhido como um novo membro da família com
+            uma vida digna, segura e feliz, sustentada de amor e compaixão.
+
+        </p>
+
+        <p>
+            Tiramos o cão da situação de risco e fornecemos os cuidados básicos (proteção,
+            alimentação, veterinário) para que possa então
+            estar apto à adoção. Quem convive com cachorro sabe a felicidade que é ter um em casa!
+
+        </p>
+
+        <p>
+            Em nossa bonita história já proporcionamos mais de 600 encontros entre famílias e cães.
+            Atualmente nossa chácara abriga mais
+            de 300 animais e nosso objetivo é que todos os cães ali encontrem um bom lar. Não
+            atuamos
+            com pedido de resgate. Recebemos pedidos de ajuda diariamente e seria impossível atender
+            a todos. Estamos com a casa cheia e precisamos garantir qualidade de vida aos animais
+            que
+            moram conosco.
+
+        </p>
+
+
+    </div>
+
+
+
+
+</div>
+
+@section scripts {
+
+    <script>
+
+        $(document).ready(function () {
+
+            alternarBannerHome(5);
+
+        });
+
+
+        function alternarBannerHome(segundos) {
+
+            var contador = 0;
+            var classes = [
+                "bg-image2",
+                "bg-image3",
+                "bg-image1"
+            ];
+
+            window.setInterval(function () {
+
+                $("#banner-desktop").attr("class", "bg-image d-none d-sm-block " + classes[contador]);
+
+                contador++;
+
+                if (contador === classes.length) {
+                    contador = 0;
+                }
+
+            }, segundos * 1000);
+
+        }
+
+    </script>
+
+}

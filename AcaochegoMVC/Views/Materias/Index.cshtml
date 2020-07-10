@@ -1,0 +1,338 @@
+﻿@{
+    ViewBag.Title = "Matérias - OSCIP Acãochego";
+}
+
+<div id="pagina-materias">
+
+
+
+
+    <div class="container">
+
+        <div class="texto-espacado-10">
+            <h2 class="frase-header">Matérias</h2>
+        </div>
+
+        <div class="texto-espacado-10">
+
+            <div id="materias-mobile" class="d-block d-sm-none">
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("ChegandoEmCasa", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Chegando em casa</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("EstouPreparado", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Estou preparado <br /> para adotar?</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("UmOuDoisCaes", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Ter mais de <br /> um cãozinho?</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("Castracao", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Quem ama, <br />castra!</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("PoliticaDeAdocao", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Política <br /> de adoção</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("PossoDoar", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Posso doar serviços <br /> e materiais</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("QueroFazerDoacao", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Quero fazer <br />uma doação</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("QueroSerVoluntario", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Quero ser <br /> voluntário</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("DenunciaMausTratos", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Denúncia de <br /> maus tratos</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("CaesEGatos", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Cães e gatos</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 p-2 text-center">
+
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("LaVemOBebe", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div>
+                                <h6 class="card-mobile-titulo">Lá vem <br /> o bebê</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xs-6 p-2 text-center">
+                        <div class="card-mobile pointer" onclick="abrirMateria('@Url.Action("PerguntasFrequentes", "Materias")')">
+                            <div>
+                                <img class="card-img-top-materia mt-2" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="card-mobile-titulo">Perguntas <br /> frequentes</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="materias-desktop" class="d-none d-sm-block">
+
+                <div class="row">
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("ChegandoEmCasa", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Chegando em casa</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("EstouPreparado", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Estou preparado para adotar?</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("UmOuDoisCaes", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Ter mais de um cãozinho?</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("Castracao", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Quem ama, castra!</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("PoliticaDeAdocao", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Política de adoção</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("PossoDoar", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Posso doar serviços e materiais?</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("QueroFazerDoacao", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Quero fazer uma doação</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("QueroSerVoluntario", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Quero ser voluntário</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("DenunciaMausTratos", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-chegando-em-casa.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Denúncia de maus tratos</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("CaesEGatos", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-estou-preparado.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Cães e gatos</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("LaVemOBebe", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-ter-mais-um.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Lá vem o bebe</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 text-center" onclick="abrirMateria('@Url.Action("PerguntasFrequentes", "Materias")')">
+                        <div class="card mb-3 cartao-materia">
+                            <div class="card-header">
+                                <img class="card-img-top-materia" src="@Url.Content("~/Content/images/materias/materia-quem-ama-castra.png")">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Perguntas frequentes</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script type="text/javascript">
+
+        function abrirMateria(url) {
+
+            window.location.href = url;
+        }
+
+    </script>
+
+}

@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Posso doar serviços e materiais";
+}
+
+
+<div class="container">
+
+    <div class="texto-espacado-10">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="frase-header">Posso doar serviços e materiais?</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <p>
+        Sim, pode! Materiais e serviços são sempre muito bem-vindos. Abaixo, relacionamos os produtos que utilizamos sempre e, por isso, temos mais necessidade. No fim desta página, você encontra os pontos de entrega dos materiais. Pode-se também contribuir com serviços, como gráfica ou de confecção, por exemplo. Toda ajuda é bem-vinda! Se precisar, escreva para nós:
+        <a href="mailto:acaochegoorg@yahoo.com.br" target="_blank">acaochegoorg@yahoo.com.br</a>.
+    </p>
+
+    <p>
+        Materiais mais usados:
+    </p>
+
+    <p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                Ração, vasilhas, jornais, shampoo e toalhas;
+            </li>
+            <li class="list-group-item">
+                Medicamentos, vermífugos, antipulgas, vitaminas e vacinas (V8, V10, antirrábica etc);
+            </li>
+            <li class="list-group-item">
+                Produtos de limpeza como cloro, sabão de coco, desinfetantes, baldes, vassouras etc;
+            </li>
+            <li class="list-group-item">
+                Triatox contra pulgas e carrapatos;
+            </li>
+            <li class="list-group-item">
+                Caixas de transporte (cachorro de porte médio/grande);
+            </li>
+            <li class="list-group-item">
+                Materiais de construção para benfeitorias nos canis e sede
+            </li>
+        </ul>
+    </p>
+
+    <div class="mt-4 mb-4">
+
+        @Html.Partial("_ConsumoMensal")
+    </div>
+
+    <div class="mt-4 mb-4">
+
+        <div id="pontos-entrega">
+
+            <p>
+                Pontos de entrega:
+            </p>
+
+            <ul>
+                <li>Em nossa chácara - escreva para receber o endereço: <a href="mailto:acaochegoorg@yahoo.com.br">acaochegoorg@yahoo.com.br</a></li>
+                <li>Em Osasco - escreva para receber o endereço: <a href="mailto:acaochegoorg@yahoo.com.br">acaochegoorg@yahoo.com.br</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>

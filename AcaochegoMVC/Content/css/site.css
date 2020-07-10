@@ -1,0 +1,454 @@
+﻿/* Paleta de Cores
+
+#f2445b - vermelho
+#59535f - cinza
+#ece6e6 - gelo
+#cd67b3 - rosa
+#549cb5 - azul
+
+*/
+
+.texto-xg {
+    font-size: 60px;
+}
+
+.cor-vermelho {
+    color: #f2445b;
+}
+
+.cor-cinza {
+    color: #59535f;
+}
+
+.cor-rosa {
+    color: #cd67b3;
+}
+
+.cor-azul {
+    color: #549cb5;
+}
+
+/* Importação de fonte externa */
+@font-face {
+    font-family: "Please write me a song";
+    src: url("../../Content/fonts/Please\ write\ me\ a\ song.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../../Content/fonts/Nunito-Regular.ttf");
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nunito';
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0 !important;
+}
+
+table td {
+    padding: 0px !important;
+
+}
+
+.texto-macho {
+    color: #549cb5;
+    font-weight: bold !important;
+}
+
+.texto-femea {
+    color: #cd67b3;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.btn-filtro {
+    border-color: #59535f;
+    background-color: #ffffff;
+    color: #59535f;
+    width: 160px;
+}
+
+    .btn-filtro:hover {
+        border-color: #549cb5;
+        background-color: #549cb5;
+        color: #ffffff;
+    }
+
+    .btn-filtro.active {
+        border-color: #549cb5;
+        background-color: #549cb5;
+        color: #ffffff;
+    }
+
+
+.header-site {
+    /*background-image: url('../images/pattern.png');
+    background-repeat: repeat;*/
+    padding: 5px;
+}
+
+.content-site {
+    min-height: 420px;
+}
+
+.line-color {
+    background-color: #549cb5;
+    min-height: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-site {
+    /*background-image: url('../images/pattern-rodape.png');
+    background-repeat: repeat;*/
+    background-color: #59535f !important;
+    color: #ffffff;
+    padding: 5px;
+    font-size: smaller;
+}
+
+
+.wrap {
+    position: relative;
+}
+
+
+
+.frase-header {
+    font-family: "Please write me a song";
+    color: #549cb5;
+}
+
+
+
+.bg-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background 1s linear;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.modal-lg {
+    min-width: 80%;
+}
+
+.btn-azul {
+    background-color: #549cb5;
+    border-color: #549cb5;
+    color: #fff;
+}
+
+    .btn-azul:hover {
+        background-color: #59535f;
+        border-color: #59535f;
+        color: #fff;
+    }
+
+
+.cartao-materia {
+    max-width: 18rem;
+    background-color: #549cb5;
+    height: 280px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.cartao-materia-pequeno {
+    max-width: 18rem;
+    background-color: #549cb5;
+    height: 200px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    width: 100%
+}
+
+.card-img-top-materia {
+    width: 90%
+}
+
+.texto-espacado-10 {
+    padding: 10px;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.selo-especial {
+    position: absolute;
+    right: 0px;
+    bottom: 105px;
+}
+
+.card-mobile {
+    background-color: #549cb5;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.card-mobile-titulo {
+    min-height:50px;
+    margin-top:10px;
+}
+
+/* Animação */
+@keyframes entrada {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.entrada {
+    animation-name: entrada;
+}
+
+
+.tempo8s {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.tempo5s {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.tempo3s {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+/* Animação Fim */
+
+/* Media Queries para estilização de classes com responsividade */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+
+    .botao-acao {
+        width: 100px;
+    }
+
+    .toggle ul {
+        padding-left: 0;
+    }
+
+    .titulo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .texto-duas-colunas {
+        text-align: justify;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    .bg-image1 {
+        background-image: url('../images/banner1-sm.jpg');
+        min-height: 440px;
+    }
+
+    .bg-image2 {
+        background-image: url('../images/banner2-sm.jpg');
+        min-height: 440px;
+    }
+
+    .bg-image3 {
+        background-image: url('../images/banner3-sm.jpg');
+        min-height: 440px;
+    }
+
+    .texto-duas-colunas {
+        padding: 10px;
+        column-count: 2;
+        column-gap: 40px;
+        text-align: justify;
+    }
+
+    .botao-acao {
+        width: 135px;
+    }
+
+    .area-botao-acao {
+        min-height: 430px;
+        padding: 18px;
+    }
+
+    .toggle ul {
+        padding-left: 0;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+
+    .titulo {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: bold;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width:769px) and (max-width: 1199px) {
+
+    .bg-image1 {
+        background-image: url('../images/banner1-md.jpg');
+        min-height: 560px;
+    }
+
+    .bg-image2 {
+        background-image: url('../images/banner2-md.jpg');
+        min-height: 560px;
+    }
+
+    .bg-image3 {
+        background-image: url('../images/banner3-md.jpg');
+        min-height: 560px;
+    }
+
+    .texto-duas-colunas {
+        padding: 10px;
+        column-count: 2;
+        column-gap: 40px;
+        text-align: justify;
+    }
+
+
+    .botao-acao {
+        width: 140px;
+    }
+
+    .area-botao-acao {
+        min-height: 550px;
+        padding: 15px;
+    }
+
+    .toggle ul {
+        padding-left: 0;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+
+    .titulo {
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: bold;
+    }
+
+    .subtitulo {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .bg-image1 {
+        background-image: url('../images/banner1-lg.jpg');
+        min-height: 530px;
+    }
+
+    .bg-image2 {
+        background-image: url('../images/banner2-lg.jpg');
+        min-height: 530px;
+    }
+
+    .bg-image3 {
+        background-image: url('../images/banner3-lg.jpg');
+        min-height: 530px;
+    }
+
+    .texto-duas-colunas {
+        padding: 10px;
+        column-count: 2;
+        column-gap: 40px;
+        text-align: justify;
+    }
+
+    .botao-acao {
+        width: 150px;
+    }
+
+
+    .area-botao-acao {
+        min-height: 520px;
+        padding: 10px;
+    }
+
+    .toggle ul {
+        padding-left: 0;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+
+    .titulo {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: bold;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
